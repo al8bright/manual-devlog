@@ -90,5 +90,11 @@ npx skills add al8bright/manual-devlog --skill manual-devlog
 ```
 manual-devlog/
 └── SKILL.md    # 스킬 정의 전체
+devlogs/        # 이 스킬로 작성한 개발로그
 README.md
+LICENSE
 ```
+
+## 라이선스
+
+[MIT License](LICENSE) — 자유롭게 사용, 수정, 재배포할 수 있습니다. 저작권 표시만 유지해 주세요.
