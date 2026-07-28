@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manual Devlog"
+  short_description: "Create detailed Korean Markdown development logs from a session."
+  default_prompt: "Create a detailed manual development-log draft for today from this session."
