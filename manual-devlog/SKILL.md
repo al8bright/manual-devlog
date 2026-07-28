@@ -41,6 +41,8 @@ Create an editable Markdown draft only. Do not publish, call an upload API, coll
 
    The trailing comma after the last tag is intentional. Keep it, and keep the `제목:` / `태그:` keys exactly as written even when the body is in another language, unless the user asks otherwise.
 
+   Each tag may contain **only Korean letters, Latin letters, and digits**. Hyphens, underscores, spaces, dots, and every other symbol are rejected by the publishing form. Join or shorten the word instead of separating it — write `ClaudeCode` or `스킬`, never `claude-code` or `agent skill`. Separate tags from each other with a comma and a space.
+
    Derive one or more concise tags from evidenced content. Do not add speculative tags. Use these body sections when supported by evidence, translated into the language of the body:
    - `# 오늘의 목표와 맥락`
    - `# 구현한 내용`
