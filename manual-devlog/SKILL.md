@@ -50,8 +50,51 @@ Create an editable Markdown draft only. Do not publish, call an upload API, coll
    - `# 문제와 해결` (only when an actual problem is known)
    - `# 검증한 내용`
    - `# 다음 단계`
-8. Use Markdown structure actively in the body: use `##` for meaningful subtopics, `###` only for a further level of detail, `-` or numbered lists for repeated items, `**강조**` for key decisions, and short code fences only when they clarify a decision. Do not make every paragraph a heading or use headings merely for visual size.
+8. Structure the body with the Markdown in **Supported syntax** below, and follow the spacing rules there. Use `##` for meaningful subtopics, `###` only for a further level of detail, `-` or numbered lists for repeated items, `**강조**` for key decisions, and short code fences only when they clarify a decision. Do not make every paragraph a heading or use headings merely for visual size.
 9. After writing, report the file path, selected sequence number, the `.gitignore` decision that was applied, and a short factual summary. State clearly that the file is a local draft and was not published.
+
+## Supported syntax
+
+The publishing form accepts exactly this Markdown. Stay inside the list, and do not emit raw HTML other than `<br>`.
+
+| 용도 | 문법 |
+| --- | --- |
+| 제목 | `# 제목` |
+| 굵게 | `**텍스트**` |
+| 기울임 | `*텍스트*` |
+| 취소선 | `~~텍스트~~` |
+| 인라인 코드 | `` `code` `` |
+| 코드 블록 | ` ```언어 ` |
+| 인용문 | `> 인용문` |
+| 순서 없는 목록 | `- 항목` |
+| 순서 있는 목록 | `1. 항목` |
+| 체크박스 | `- [ ] 항목` |
+| 링크 | `[텍스트](URL)` |
+| 이미지 | `![설명](경로)` |
+| 표 | `\| 셀 \| 셀 \|` |
+| 구분선 | `---` |
+| 주석 | `<!-- 주석 -->` |
+| 줄바꿈 | 공백 2개 또는 `<br>` |
+| 각주 | `[^1]` |
+| 수식 | `$수식$` |
+| 이스케이프 | `\*` |
+
+Line breaks decide whether the result is readable, so treat them as part of the writing:
+
+- Put a blank line between every block — paragraphs, headings, lists, tables, quotes, and code fences. A heading or list glued to the previous paragraph reads as a wall of text.
+- Keep a paragraph to two to four sentences carrying one idea. Split rather than extend.
+- Use a blank line to separate thoughts. Reserve two trailing spaces or `<br>` for lines that must stay inside one paragraph, such as a short sequence or an aside.
+- Do not leave more than one blank line in a row.
+
+Reach for the element that matches the content instead of defaulting to paragraphs and bullets:
+
+- A table when comparing two or more things across the same fields.
+- A quote for citing an error message, a document, or the user's own words.
+- A checkbox list for remaining work, and a plain list for finished items.
+- A link whenever a repository, document, or command reference is named.
+- A horizontal rule only to divide major parts of a long document.
+
+Do not decorate for its own sake. No bold across a whole paragraph, no heading used as a font size, and no more than one idea per bullet.
 
 ## Style
 
